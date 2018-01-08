@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Welcome to Tamer TODos!</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="main">
+    <h1>Tamer Osman Todos List</h1>
+    <div>
+      <button onclick="handlers.toggleAllToDos()">
+        Toggle all Todos
+      </button>
+      <button onclick="handlers.deleteCompleted()">
+        Delete Completed
+      </button>
+    </div>
+    <div>
+      <button onclick="handlers.addToDo()">
+        Add Todo
+      </button>
+      <input id="addToDoInputText" type="text">
+    </div>
+    <div>
+      <button onclick="handlers.editToDo()">
+        Change Todo
+      </button>
+      <input id="oldToDoInputText" type="text"> to 
+      <input id="newToDoInputText" type="text">
+    </div>
+<!--    <div>
+      <button onclick="handlers.completedToDo()">
+        Toggle Completed Todo
+      </button>
+      <input id="completedToDoInputText" type="text">
+    </div>-->
+    <div>
+      <ul>
+
+      </ul>
+    </div>
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
